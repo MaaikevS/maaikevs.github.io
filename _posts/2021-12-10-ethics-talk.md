@@ -12,7 +12,7 @@ The amount of Health Data being generated is on the rise. Yet, the sharing of me
 The EAN-EBRAINS workshop encourages open discussions on issues and challenges associated with medical data sharing in Clinical Neuroscience in Europe.
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/types-of-datasets.png" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="assets/img/types-of-datasets.jpg" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 

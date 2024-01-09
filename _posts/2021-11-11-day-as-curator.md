@@ -18,7 +18,7 @@ Proper data curation enables datasets to be more easily found, understood and re
 ## Data Organisation
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/DataOrganisation_keyPoints.png" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="assets/img/data-organisation-key-points.jpg" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 File format, documentation (data descriptor (is partly also the metadata)), privacy aspects. Do the data files contain personally identifiable, sensitive or inappropriate information? Depending on the type of data, we need to add extra layers of security. Content: do the data match the metadata that is provided and does it match the scope of EBRAINS.

@@ -20,7 +20,7 @@ This webcast will provide user examples of the data sharing process as well as t
 
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/big-data.png" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="assets/img/big-data.jpg" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 
