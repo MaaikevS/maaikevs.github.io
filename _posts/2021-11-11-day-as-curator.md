@@ -2,7 +2,7 @@
 layout: post
 title:  A day in the life of a data curator
 date: 2021-11-11 10:01:00
-description: Talk and Panel Discussion at FENS 2022
+description: 
 tags:
 categories: posts
 ---
