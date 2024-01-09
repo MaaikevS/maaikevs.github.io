@@ -2,7 +2,7 @@
 layout: about
 title: About
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Clinical Data Scientist · Neuroscientist · Science Communicator
+subtitle: Clinical Data Scientist · Neuroscientist · Science Communicator
 
 profile:
   align: right
@@ -23,6 +23,8 @@ I began my scientific journey by studying the building blocks of organic materia
 
 I am now keen to apply my research experience to real-world problems and explore novel roles in the fields of life science and healthcare. I am looking for opportunities that allow me to make a more direct and measurable contribution to society and step beyond basic research.
 
-• A driven, adaptable and proactive neuroscientist with the desire to learn who thrives in a fast-paced and deadline-driven environment. Has the ability to handle several projects in multidisciplinary and multinational teams. More than 10 years of hands-on research and programming experience resulting in 12 scientific publications.
-• Hard-working perfectionist with exceptional attention to detail. Effective project management demonstrated by the completion of my MSc and PhD, and the opportunity to undertake collaborative projects outside of the scope of my PhD.
-• Excellent communication skills with the ability to understand, interpret, and communicate complex scientific information and data. Presented work at more than 15 national and international conferences, organised 5 public engagement events directed at patient groups and high school students, and created 5 educational training videos for an [online platform](https://training.incf.org/course/open-data-neuroscience-data-sharing-ebrains).
+<ul>
+  <li> A driven, adaptable and proactive neuroscientist with the desire to learn who thrives in a fast-paced and deadline-driven environment. Has the ability to handle several projects in multidisciplinary and multinational teams. More than 10 years of hands-on research and programming experience resulting in 12 scientific publications. </li>
+  <li> Hard-working perfectionist with exceptional attention to detail. Effective project management demonstrated by the completion of my MSc and PhD, and the opportunity to undertake collaborative projects outside of the scope of my PhD.</li>
+  <li>Excellent communication skills with the ability to understand, interpret, and communicate complex scientific information and data. Presented work at more than 15 national and international conferences, organised 5 public engagement events directed at patient groups and high school students, and created 5 educational training videos for an [online platform](https://training.incf.org/course/open-data-neuroscience-data-sharing-ebrains).</li>
+</ul>
