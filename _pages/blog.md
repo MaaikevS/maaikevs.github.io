@@ -2,6 +2,7 @@
 layout: page
 permalink: /blog/
 title: Blog
+description: A collection of events, notes and thoughts
 nav: true
 nav_order: 1
 pagination:
