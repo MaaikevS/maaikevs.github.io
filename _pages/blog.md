@@ -122,7 +122,7 @@ pagination:
 <div class="row">
           <div class="col-sm-9">
 {%- endif -%}
-        <h4>
+        <h5>
         {% if post.redirect == blank %}
           <a class="post-title" href="{{ post.url | relative_url }}"><span class="font-weight-bolder">{{ post.title }}</span></a>
         {% elsif post.redirect contains '://' %}
@@ -133,7 +133,7 @@ pagination:
         {% else %}
           <a class="post-title" href="{{ post.redirect | relative_url }}"><span class="font-weight-bolder">{{ post.title }}</span></a>
         {% endif %}
-      </h4>
+      </h5>
       <p>{{ post.description }}</p>
       <p class="post-meta">
         {{ read_time }} min read &nbsp; &middot; &nbsp;
