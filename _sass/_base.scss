@@ -504,6 +504,11 @@ footer.sticky-bottom {
   mjx-container[jax="CHTML"][display="true"] {
     display: unset;
   }
+  
+  h1 {
+    color: var(--global-theme-color);
+    font-size: 3rem;
+  }
 }
 
 .post-list {
