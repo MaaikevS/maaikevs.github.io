@@ -1,0 +1,108 @@
+- title: General Information
+  type: map
+  contents:
+    - name: Full Name
+      value: Maaike van Swieten
+    - name: Languages
+      value: English, Dutch
+
+- title: Education
+  type: time_table
+  contents:
+    - title: Ph.D. Computational (Clinical) Neuroscience
+      institution: University of Oxford, Oxford, United Kingdom
+      year: 2016 - 2020
+      description:
+        - Description 1.
+        - Description 2.
+        - title: Physiological modulation of Learning and Decision-Making
+          contents:
+            - Sub-description 1.
+            - Sub-description 2.
+    - title: M.Sc. Neuroscience and Cognition
+      institution: University of Utrecht, Utrecht, The Netherlands
+      year: 2012 - 2014
+      description:
+        - Research Internship 1 at the University of North Carolina in Chapel Hill (USA).
+        - Research Internship 2 at Universitair Medisch Centrum Utrecht.
+        - Master Thesis at Brain Center Rudolf Magnus.
+    - title: B.Sc. Chemistry
+      institution: University of Utrecht, Utrecht, The Netherlands
+      year: 2012
+      description:
+        - Bachelor Thesis at the Medicinal Chemistry department of the University of Utrecht.
+
+- title: Experience
+  type: time_table
+  contents:
+    - title: Clinical Data Scientist
+      institution: Integraal Kankercentrum Nederland (IKNL), Eindhoven, The Netherlands
+      year: 2022 - present
+      description:
+        - Description 1.
+        - Description 2.
+
+    - title: Postdoctoral Researcher and Data Curator
+      institution: University of Oslo, Oslo, Norway
+      year: 2021 - 2022
+      description:
+        - Description 1.
+        - Description 2.
+
+    - title: Doctoral and Postdoctoral Researcher
+      institution: University of Oxford, Oxford, United Kingdom
+      year: 2016 - 2021
+
+    - title: Client Liason
+      institution: Research Strategy Consultancy, University of Oxford, Oxford, United Kingdom
+      year: 2019 - 2020
+      description:
+
+    - title: Research Associate
+      institution: Biozentrum, University of Basel, Basel, Switzerland
+      year: 2014 - 2016
+
+- title: Open Source Projects
+  type: time_table
+  contents:
+    - title: <a href="https://github.com/openMetadataInitiative">Open Metadata Initiative</a>
+      year: 2021 - 2022
+      description: A metadata framework for linked data in neuroscience.
+
+- title: Honors and Awards
+  type: time_table
+  contents:
+    - year: 2020
+      items: 
+        - Runner-up 3 Minute Thesis Competition at the University of Oxford
+    - year: 2016
+      items: 
+        - Medical Research Council Doctorate Scholorship
+
+    - year: 2016
+      items: 
+        - Antelope@university award for future female academic leaders
+
+    - year: 2014
+      items: 
+        - Scholarship David de Wied Stichting
+        - Scholarship Fundatie van de Vrijvrouwe van Renswoude
+        - Scholarship Jo Kolk Studiefonds
+        - Travel grant K.F.Hein fonds
+
+# - title: Academic Interests
+#   type: nested_list
+#   contents:
+#     - title: Topic 1.
+#       items: 
+#         - Description 1.
+#         - Description 2.
+#     - title: Topic 2.
+#       items:
+#         - Description 1.
+#         - Description 2.
+
+# - title: Other Interests
+#   type: list
+#   contents:
+#     - <u>Hobbies:</u> Hobby 1, Hobby 2, etc.
