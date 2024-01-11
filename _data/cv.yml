@@ -13,12 +13,10 @@
       institution: University of Oxford, Oxford, United Kingdom
       year: 2016 - 2020
       description:
-        - Description 1.
-        - Description 2.
         - title: Physiological modulation of Learning and Decision-Making
           contents:
-            - Sub-description 1.
-            - Sub-description 2.
+            - Developed computational models to probe the influence of physiological signals on brain function. 
+            - Employed reinforcement learning (machine learning) models and performed statistical analysis (e.g. regression).
     - title: M.Sc. Neuroscience and Cognition
       institution: University of Utrecht, Utrecht, The Netherlands
       year: 2012 - 2014
@@ -39,15 +37,17 @@
       institution: Integraal Kankercentrum Nederland (IKNL), Eindhoven, The Netherlands
       year: 2022 - present
       description:
-        - Description 1.
-        - Description 2.
+			  - Data and Technology work package leader for a European project
+			  - Standardised data using the Observational Medical Outcome Partnership - Common Data Model (OMOP-CDM)
+			  - Implemented a federated learning network to ensure that data are Findable, Accessible, Interoperable and Reusable (FAIR).
 
     - title: Postdoctoral Researcher and Data Curator
       institution: University of Oslo, Oslo, Norway
       year: 2021 - 2022
       description:
-        - Description 1.
-        - Description 2.
+        -	In-depth curation of neuroscience data and associated metadata in a knowledge graph database.
+			  - Optimised curation workflows and automated data processing pipelines.
+			  - Co-developer openMINDS metadata model.
 
     - title: Doctoral and Postdoctoral Researcher
       institution: University of Oxford, Oxford, United Kingdom
