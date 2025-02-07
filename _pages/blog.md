@@ -1,7 +1,8 @@
 ---
-layout: default
+layout: page
 permalink: /blog/
 title: Blog
+description: A collection of events, notes and thoughts
 nav: true
 nav_order: 1
 pagination:
@@ -21,7 +22,7 @@ pagination:
 {% assign blog_name_size = site.blog_name | size %}
 {% assign blog_description_size = site.blog_description | size %}
 
-{% if blog_name_size > 0 or blog_description_size > 0 %}
+<!-- {% if blog_name_size > 0 or blog_description_size > 0 %}
 
   <div class="header-bar">
     <h1>{{ site.blog_name }}</h1>
@@ -54,7 +55,7 @@ pagination:
       {% endfor %}
     </ul>
   </div>
-  {% endif %}
+  {% endif %} -->
 
 {% assign featured_posts = site.posts | where: "featured", "true" %}
 {% if featured_posts.size > 0 %}
@@ -127,18 +128,18 @@ pagination:
 <div class="row">
           <div class="col-sm-9">
 {% endif %}
-        <h3>
+        <h5>
         {% if post.redirect == blank %}
-          <a class="post-title" href="{{ post.url | relative_url }}">{{ post.title }}</a>
+          <a class="post-title" href="{{ post.url | relative_url }}"><span class="font-weight-bolder">{{ post.title }}</span></a>
         {% elsif post.redirect contains '://' %}
-          <a class="post-title" href="{{ post.redirect }}" target="_blank">{{ post.title }}</a>
+          <a class="post-title" href="{{ post.redirect }}" target="_blank"><span class="font-weight-bolder">{{ post.title }}</span></a>
           <svg width="2rem" height="2rem" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
             <path d="M17 13.5v6H5v-12h6m3-3h6v6m0-6-9 9" class="icon_svg-stroke" stroke="#999" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path>
           </svg>
         {% else %}
-          <a class="post-title" href="{{ post.redirect | relative_url }}">{{ post.title }}</a>
+          <a class="post-title" href="{{ post.redirect | relative_url }}"><span class="font-weight-bolder">{{ post.title }}</span></a>
         {% endif %}
-      </h3>
+      </h5>
       <p>{{ post.description }}</p>
       <p class="post-meta">
         {{ read_time }} min read &nbsp; &middot; &nbsp;
