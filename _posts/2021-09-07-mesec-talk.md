@@ -7,7 +7,7 @@ tags: Talks Video
 categories: talks
 ---
 
-n September 2021, 16 early-career researchers from diverse backgrounds came together to share ideas and discuss current developments related to the topic of consciousness. These discussions were followed by presentations about the EBRAINS research infrastructure and the use of their tools and services.
+In September 2021, 16 early-career researchers from diverse backgrounds came together to share ideas and discuss current developments related to the topic of consciousness. These discussions were followed by presentations about the EBRAINS research infrastructure and the use of their tools and services.
 
 I was invited to give an introduction into the Data and Knowledge service of the EBRAINS research infrastructure. This service supports researchers in sharing and finding data, models and software.
 
