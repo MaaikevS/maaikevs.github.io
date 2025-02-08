@@ -2,13 +2,13 @@
     initTheme();
   </script> </head> <body class="fixed-top-nav "> <header> <nav id="navbar" class="navbar navbar-light navbar-expand-sm fixed-top" role="navigation"> <div class="container"> <a class="navbar-brand title font-weight-lighter" href="/"> <span class="font-weight-bold">Maaike</span> M. H. van Swieten </a> <button class="navbar-toggler collapsed ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar top-bar"></span> <span class="icon-bar middle-bar"></span> <span class="icon-bar bottom-bar"></span> </button> <div class="collapse navbar-collapse text-right" id="navbarNav"> <ul class="navbar-nav ml-auto flex-nowrap"> <li class="nav-item "> <a class="nav-link" href="/">About </a> </li> <li class="nav-item active"> <a class="nav-link" href="/blog/">Blog </a> </li> <li class="nav-item "> <a class="nav-link" href="/publications/">Publications </a> </li> <li class="nav-item "> <a class="nav-link" href="/projects/">Projects </a> </li> <li class="nav-item "> <a class="nav-link" href="/cv/">CV </a> </li> <li class="nav-item"> <button id="search-toggle" title="Search" onclick="openSearchModal()"> <span class="nav-link">Search <i class="ti ti-search"></i></span> </button> </li> <li class="toggle-container"> <button id="light-toggle" title="Change theme"> <i class="ti ti-sun-moon" id="light-toggle-system"></i> <i class="ti ti-moon-filled" id="light-toggle-dark"></i> <i class="ti ti-sun-filled" id="light-toggle-light"></i> </button> </li> </ul> </div> </div> </nav> <progress id="progress" value="0"> <div class="progress-container"> <span class="progress-bar"></span> </div> </progress> </header> <div class="container mt-5" role="main"> <div class="post"> <header class="post-header"> <h1 class="post-title">Agent-Based Models</h1> <p class="post-meta"> Created in February 08, 2025 </p> <p class="post-tags"> <a href="/blog/2025"> <i class="fa-solid fa-calendar fa-sm"></i> 2025 </a>   ·   <a href="/blog/tag/code"> <i class="fa-solid fa-hashtag fa-sm"></i> Code</a>   <a href="/blog/tag/r"> <i class="fa-solid fa-hashtag fa-sm"></i> R</a>   <a href="/blog/tag/python"> <i class="fa-solid fa-hashtag fa-sm"></i> python</a>   ·   <a href="/blog/category/implementation"> <i class="fa-solid fa-tag fa-sm"></i> implementation</a> </p> </header> <article class="post-content"> <div id="markdown-content"> <h2 id="what-are-agent-based-models-abms">What are Agent-Based Models (ABMs)?</h2> <p>Agent-based models (ABMs) are computational simulation models that represent complex systems through the interactions of individual entities, called “agents.” These agents follow defined rules and behaviors, interacting with each other and their environment over time. ABMs are particularly useful for modeling systems with heterogeneous elements, emergent behaviors, and stochastic dynamics.</p> <h3 id="key-features-of-abms">Key Features of ABMs:</h3> <ul> <li> <strong>Agents:</strong> Represent individual entities with attributes (e.g., cancer cells, immune cells, patients).</li> <li> <strong>Rules:</strong> Govern agent behaviors (e.g., proliferation, migration, apoptosis).</li> <li> <strong>Environment:</strong> The space where agents interact (e.g., tumor microenvironment).</li> <li> <strong>Interactions:</strong> Agents interact based on defined mechanisms (e.g., cell signaling, competition for resources).</li> <li> <strong>Stochasticity:</strong> Random events influence system evolution (e.g., mutations, drug resistance).</li> </ul> <h3 id="steps-to-implement">Steps to Implement:</h3> <ol> <li> <strong>Define Agents and States:</strong> Map out the model structure.</li> <li> <strong>Specify Transition Rules:</strong> Define the likelihood of transitioning into another state.</li> <li> <strong>Set Up the Environment:</strong> Define spatial structure or non-spatial interactions.</li> <li> <strong>Incorporate Stochasticity:</strong> Introduce random factors.</li> <li> <strong>Simulation Execution:</strong> Run simulations over time to observe emergent patterns. . <strong>Analysis and Visualization:</strong> Use statistical tools and visualization libraries (e.g., Matplotlib, Gephi).</li> </ol> <h3 id="simple-example-scenario">Simple example scenario</h3> <p><strong>Scenario:</strong></p> <ul> <li>Simulating the growth of a heterogeneous tumor in response to chemotherapy.</li> </ul> <p><strong>Agents:</strong></p> <ul> <li>Tumor cells (can be in different states: “sensitive,” “resistant,” or “dead”)</li> </ul> <p>Not included in simple model:</p> <ul> <li>Immune cells (attack tumor cells)</li> <li>Drug molecules (affect tumor cells)</li> </ul> <p><strong>States and Transitions:</strong></p> <ul> <li>Sensitive cells → Become resistant due to mutations (probabilistic transition).</li> <li>Resistant cells → Survive treatment but might be targeted by immune cells.</li> <li>Dead cells → Removed from the environment.</li> </ul> <pre><code class="language-mermaid">stateDiagram-v2
 direction LR
-   sensitive cells --&gt; resistent cells
-   resistent cells --&gt; dead cells
-   sensitive cells --&gt; dead cells
-   sensitive cells --&gt; sensitive cells
-   resistent cells --&gt; resistent cells
-   dead cells --&gt; dead cells
-</code></pre> <p><strong>Environment:</strong></p> <ul> <li>A 2D lattice representing the tumor microenvironment where cells move and interact.</li> </ul> <p><strong>Simulation Objectives:</strong></p> <ul> <li>Observe how tumors evolve resistance over time.</li> <li>Evaluate the effectiveness of combination therapies.</li> <li>Predict the likelihood of recurrence after treatment cessation.</li> </ul> <p><strong>Key Insights Gained:</strong></p> <ul> <li>The role of spatial heterogeneity in treatment success.</li> <li>Potential timing for combination therapies to prevent resistance.</li> <li>How immune system dynamics influence tumor eradication.</li> </ul> <h3 id="implementation">Implementation</h3> <ul id="abm" class="tab" data-tab="22f8622f-8db2-4ea6-94fc-58f17fd0d8ed" data-name="abm"> <li class="active" id="abm-r"> <a href="#">R </a> </li> <li id="abm-python"> <a href="#">python </a> </li> </ul> <ul class="tab-content" id="22f8622f-8db2-4ea6-94fc-58f17fd0d8ed" data-name="abm"> <li class="active"> <div class="language-R highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">library</span><span class="p">(</span><span class="n">data.table</span><span class="p">)</span><span class="w">
+   sensitive --&gt; resistent: 0.1
+   resistent --&gt; dead
+   sensitive --&gt; dead
+   sensitive --&gt; sensitive
+   resistent --&gt; resistent
+   dead --&gt; dead
+</code></pre> <p><strong>Environment:</strong></p> <ul> <li>A 2D lattice representing the tumor microenvironment where cells move and interact.</li> </ul> <p><strong>Simulation Objectives:</strong></p> <ul> <li>Observe how tumors evolve resistance over time.</li> <li>Evaluate the effectiveness of combination therapies.</li> <li>Predict the likelihood of recurrence after treatment cessation.</li> </ul> <p><strong>Key Insights Gained:</strong></p> <ul> <li>The role of spatial heterogeneity in treatment success.</li> <li>Potential timing for combination therapies to prevent resistance.</li> <li>How immune system dynamics influence tumor eradication.</li> </ul> <h3 id="implementation">Implementation</h3> <ul id="abm" class="tab" data-tab="0314b65a-5b4e-4dd0-8504-494b9ce4285d" data-name="abm"> <li class="active" id="abm-r"> <a href="#">R </a> </li> <li id="abm-python"> <a href="#">python </a> </li> </ul> <ul class="tab-content" id="0314b65a-5b4e-4dd0-8504-494b9ce4285d" data-name="abm"> <li class="active"> <div class="language-R highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">library</span><span class="p">(</span><span class="n">data.table</span><span class="p">)</span><span class="w">
 
 </span><span class="c1"># Develop the agent and the states</span><span class="w">
 </span><span class="n">initialize_model</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="k">function</span><span class="p">(</span><span class="n">initial_cells</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">100</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w">
@@ -111,89 +111,72 @@ direction LR
   "type": "line",
   "data": {
     "labels": [
-      "Cycle 1",
-      "Cycle 2",
-      "Cycle 3",
-      "Cycle 4",
-      "Cycle 5",
-      "Cycle 6"
+      "January",
+      "February",
+      "March",
+      "April",
+      "May",
+      "June",
+      "July"
     ],
     "datasets": [
       {
-        "label": "Sensitive cells",
+        "label": "# of bugs",
         "fill": false,
         "lineTension": 0.1,
-        "backgroundColor": "rgba(54, 162, 235,0.4)",
-        "borderColor": "rgba(54, 162, 235,1)",
+        "backgroundColor": "rgba(75,192,192,0.4)",
+        "borderColor": "rgba(75,192,192,1)",
         "borderCapStyle": "butt",
         "borderDash": [],
         "borderDashOffset": 0,
         "borderJoinStyle": "miter",
-        "pointBorderColor": "rgba(54, 162, 235,1)",
+        "pointBorderColor": "rgba(75,192,192,1)",
         "pointBackgroundColor": "#fff",
         "pointBorderWidth": 1,
         "pointHoverRadius": 5,
-        "pointHoverBackgroundColor": "rgba(54, 162, 235,1)",
+        "pointHoverBackgroundColor": "rgba(75,192,192,1)",
         "pointHoverBorderColor": "rgba(220,220,220,1)",
         "pointHoverBorderWidth": 2,
         "pointRadius": 1,
         "pointHitRadius": 10,
         "data": [
-          33,
-          10,
-          2,
-          0,
-          0,
-          0
+          65,
+          59,
+          80,
+          81,
+          56,
+          55,
+          40
         ],
         "spanGaps": false
       },
       {
-        "label": "Resistant cells",
+        "label": "# of bugs",
         "fill": false,
         "lineTension": 0.1,
-        "backgroundColor": "rgba(255, 205, 86,0.4)",
-        "borderColor": "rgba(255, 205, 86,1)",
+        "backgroundColor": "rgba(75,192,192,0.4)",
+        "borderColor": "rgba(75,192,192,1)",
         "borderCapStyle": "butt",
         "borderDash": [],
         "borderDashOffset": 0,
         "borderJoinStyle": "miter",
-        "pointBorderColor": "rgba(255, 205, 86,1)",
+        "pointBorderColor": "rgba(75,192,192,1)",
         "pointBackgroundColor": "#fff",
         "pointBorderWidth": 1,
         "pointHoverRadius": 5,
-        "pointHoverBackgroundColor": "rgba(255, 205, 86,1)",
+        "pointHoverBackgroundColor": "rgba(75,192,192,1)",
         "pointHoverBorderColor": "rgba(220,220,220,1)",
         "pointHoverBorderWidth": 2,
         "pointRadius": 1,
         "pointHitRadius": 10,
         "data": [
-            5,6,6,6,6,6
-        ],
-        "spanGaps": false
-      },
-      ,
-      {
-        "label": "Dead cells",
-        "fill": false,
-        "lineTension": 0.1,
-        "backgroundColor": "rgba(255, 99, 132,0.4)",
-        "borderColor": "rgba(255, 99, 132,1)",
-        "borderCapStyle": "butt",
-        "borderDash": [],
-        "borderDashOffset": 0,
-        "borderJoinStyle": "miter",
-        "pointBorderColor": "rgba(255, 99, 132,1)",
-        "pointBackgroundColor": "#fff",
-        "pointBorderWidth": 1,
-        "pointHoverRadius": 5,
-        "pointHoverBackgroundColor": "rgba(255, 99, 132,1)",
-        "pointHoverBorderColor": "rgba(220,220,220,1)",
-        "pointHoverBorderWidth": 2,
-        "pointRadius": 1,
-        "pointHitRadius": 10,
-        "data": [
-            62,84,92,94,94,94
+          165,
+          159,
+          180,
+          181,
+          156,
+          155,
+          140
         ],
         "spanGaps": false
       }
