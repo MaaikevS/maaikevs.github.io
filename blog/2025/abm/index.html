@@ -8,7 +8,7 @@ direction LR
    sensitive cells --&gt; sensitive cells
    resistent cells --&gt; resistent cells
    dead cells --&gt; dead cells
-</code></pre> <p><strong>Environment:</strong></p> <ul> <li>A 2D lattice representing the tumor microenvironment where cells move and interact.</li> </ul> <p><strong>Simulation Objectives:</strong></p> <ul> <li>Observe how tumors evolve resistance over time.</li> <li>Evaluate the effectiveness of combination therapies.</li> <li>Predict the likelihood of recurrence after treatment cessation.</li> </ul> <p><strong>Key Insights Gained:</strong></p> <ul> <li>The role of spatial heterogeneity in treatment success.</li> <li>Potential timing for combination therapies to prevent resistance.</li> <li>How immune system dynamics influence tumor eradication.</li> </ul> <h3 id="implementation">Implementation</h3> <ul id="abm" class="tab" data-tab="a93d89eb-bdbc-487d-82d4-8740e670542c" data-name="abm"> <li class="active" id="abm-r"> <a href="#">R </a> </li> <li id="abm-python"> <a href="#">python </a> </li> </ul> <ul class="tab-content" id="a93d89eb-bdbc-487d-82d4-8740e670542c" data-name="abm"> <li class="active"> <div class="language-R highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">library</span><span class="p">(</span><span class="n">data.table</span><span class="p">)</span><span class="w">
+</code></pre> <p><strong>Environment:</strong></p> <ul> <li>A 2D lattice representing the tumor microenvironment where cells move and interact.</li> </ul> <p><strong>Simulation Objectives:</strong></p> <ul> <li>Observe how tumors evolve resistance over time.</li> <li>Evaluate the effectiveness of combination therapies.</li> <li>Predict the likelihood of recurrence after treatment cessation.</li> </ul> <p><strong>Key Insights Gained:</strong></p> <ul> <li>The role of spatial heterogeneity in treatment success.</li> <li>Potential timing for combination therapies to prevent resistance.</li> <li>How immune system dynamics influence tumor eradication.</li> </ul> <h3 id="implementation">Implementation</h3> <ul id="abm" class="tab" data-tab="22f8622f-8db2-4ea6-94fc-58f17fd0d8ed" data-name="abm"> <li class="active" id="abm-r"> <a href="#">R </a> </li> <li id="abm-python"> <a href="#">python </a> </li> </ul> <ul class="tab-content" id="22f8622f-8db2-4ea6-94fc-58f17fd0d8ed" data-name="abm"> <li class="active"> <div class="language-R highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">library</span><span class="p">(</span><span class="n">data.table</span><span class="p">)</span><span class="w">
 
 </span><span class="c1"># Develop the agent and the states</span><span class="w">
 </span><span class="n">initialize_model</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="k">function</span><span class="p">(</span><span class="n">initial_cells</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">100</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w">
@@ -111,24 +111,29 @@ direction LR
   "type": "line",
   "data": {
     "labels": [
-      1,2,3,4,5,6
+      "Cycle 1",
+      "Cycle 2",
+      "Cycle 3",
+      "Cycle 4",
+      "Cycle 5",
+      "Cycle 6"
     ],
     "datasets": [
       {
         "label": "Sensitive cells",
         "fill": false,
         "lineTension": 0.1,
-        "backgroundColor": "rgba(75,192,192,0.4)",
-        "borderColor": "rgba(75,192,192,1)",
+        "backgroundColor": "rgba(54, 162, 235,0.4)",
+        "borderColor": "rgba(54, 162, 235,1)",
         "borderCapStyle": "butt",
         "borderDash": [],
         "borderDashOffset": 0,
         "borderJoinStyle": "miter",
-        "pointBorderColor": "rgba(75,192,192,1)",
+        "pointBorderColor": "rgba(54, 162, 235,1)",
         "pointBackgroundColor": "#fff",
         "pointBorderWidth": 1,
         "pointHoverRadius": 5,
-        "pointHoverBackgroundColor": "rgba(75,192,192,1)",
+        "pointHoverBackgroundColor": "rgba(54, 162, 235,1)",
         "pointHoverBorderColor": "rgba(220,220,220,1)",
         "pointHoverBorderWidth": 2,
         "pointRadius": 1,
@@ -147,17 +152,17 @@ direction LR
         "label": "Resistant cells",
         "fill": false,
         "lineTension": 0.1,
-        "backgroundColor": "rgba(75,192,192,0.4)",
-        "borderColor": "rgba(75,192,192,1)",
+        "backgroundColor": "rgba(255, 205, 86,0.4)",
+        "borderColor": "rgba(255, 205, 86,1)",
         "borderCapStyle": "butt",
         "borderDash": [],
         "borderDashOffset": 0,
         "borderJoinStyle": "miter",
-        "pointBorderColor": "rgba(75,192,192,1)",
+        "pointBorderColor": "rgba(255, 205, 86,1)",
         "pointBackgroundColor": "#fff",
         "pointBorderWidth": 1,
         "pointHoverRadius": 5,
-        "pointHoverBackgroundColor": "rgba(75,192,192,1)",
+        "pointHoverBackgroundColor": "rgba(255, 205, 86,1)",
         "pointHoverBorderColor": "rgba(220,220,220,1)",
         "pointHoverBorderWidth": 2,
         "pointRadius": 1,
@@ -172,17 +177,17 @@ direction LR
         "label": "Dead cells",
         "fill": false,
         "lineTension": 0.1,
-        "backgroundColor": "rgba(75,192,192,0.4)",
-        "borderColor": "rgba(75,192,192,1)",
+        "backgroundColor": "rgba(255, 99, 132,0.4)",
+        "borderColor": "rgba(255, 99, 132,1)",
         "borderCapStyle": "butt",
         "borderDash": [],
         "borderDashOffset": 0,
         "borderJoinStyle": "miter",
-        "pointBorderColor": "rgba(75,192,192,1)",
+        "pointBorderColor": "rgba(255, 99, 132,1)",
         "pointBackgroundColor": "#fff",
         "pointBorderWidth": 1,
         "pointHoverRadius": 5,
-        "pointHoverBackgroundColor": "rgba(75,192,192,1)",
+        "pointHoverBackgroundColor": "rgba(255, 99, 132,1)",
         "pointHoverBorderColor": "rgba(220,220,220,1)",
         "pointHoverBorderWidth": 2,
         "pointRadius": 1,
