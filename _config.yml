@@ -324,8 +324,8 @@ display_categories: ['blockquotes'] # these categories will be displayed on the 
 
 scholar:
 
-  last_name: [Van Swieten]
-  first_name: [Maaike, Maaike MH, MMH]
+  last_name: [Van Swieten, van Swieten]
+  first_name: [Maaike, Maaike MH, MMH, M.M.H., Maaike M.H., Maaike M. H., M M H, M. M. H., Maaike M H ]
 
   style: apa
   locale: en
