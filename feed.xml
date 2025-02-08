@@ -1,12 +1,12 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.3.4">Jekyll</generator><link href="https://maaikevs.github.io/feed.xml" rel="self" type="application/atom+xml"/><link href="https://maaikevs.github.io/" rel="alternate" type="text/html" hreflang="en"/><updated>2025-02-08T12:44:51+00:00</updated><id>https://maaikevs.github.io/feed.xml</id><title type="html">blank</title><entry><title type="html">Agent-Based Models</title><link href="https://maaikevs.github.io/blog/2025/abm/" rel="alternate" type="text/html" title="Agent-Based Models"/><published>2025-02-08T00:32:13+00:00</published><updated>2025-02-08T00:32:13+00:00</updated><id>https://maaikevs.github.io/blog/2025/abm</id><content type="html" xml:base="https://maaikevs.github.io/blog/2025/abm/"><![CDATA[<h2 id="what-are-agent-based-models-abms">What are Agent-Based Models (ABMs)?</h2> <p>Agent-based models (ABMs) are computational simulation models that represent complex systems through the interactions of individual entities, called “agents.” These agents follow defined rules and behaviors, interacting with each other and their environment over time. ABMs are particularly useful for modeling systems with heterogeneous elements, emergent behaviors, and stochastic dynamics.</p> <h3 id="key-features-of-abms">Key Features of ABMs:</h3> <ul> <li><strong>Agents:</strong> Represent individual entities with attributes (e.g., cancer cells, immune cells, patients).</li> <li><strong>Rules:</strong> Govern agent behaviors (e.g., proliferation, migration, apoptosis).</li> <li><strong>Environment:</strong> The space where agents interact (e.g., tumor microenvironment).</li> <li><strong>Interactions:</strong> Agents interact based on defined mechanisms (e.g., cell signaling, competition for resources).</li> <li><strong>Stochasticity:</strong> Random events influence system evolution (e.g., mutations, drug resistance).</li> </ul> <h3 id="steps-to-implement">Steps to Implement:</h3> <ol> <li><strong>Define Agents and States:</strong> Map out the model structure.</li> <li><strong>Specify Transition Rules:</strong> Define the likelihood of transitioning into another state.</li> <li><strong>Set Up the Environment:</strong> Define spatial structure or non-spatial interactions.</li> <li><strong>Incorporate Stochasticity:</strong> Introduce random factors.</li> <li><strong>Simulation Execution:</strong> Run simulations over time to observe emergent patterns. . <strong>Analysis and Visualization:</strong> Use statistical tools and visualization libraries (e.g., Matplotlib, Gephi).</li> </ol> <h3 id="simple-example-scenario">Simple example scenario</h3> <p><strong>Scenario:</strong></p> <ul> <li>Simulating the growth of a heterogeneous tumor in response to chemotherapy.</li> </ul> <p><strong>Agents:</strong></p> <ul> <li>Tumor cells (can be in different states: “sensitive,” “resistant,” or “dead”)</li> </ul> <p>Not included in simple model:</p> <ul> <li>Immune cells (attack tumor cells)</li> <li>Drug molecules (affect tumor cells)</li> </ul> <p><strong>States and Transitions:</strong></p> <ul> <li>Sensitive cells → Become resistant due to mutations (probabilistic transition).</li> <li>Resistant cells → Survive treatment but might be targeted by immune cells.</li> <li>Dead cells → Removed from the environment.</li> </ul> <pre><code class="language-mermaid">stateDiagram-v2
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.3.4">Jekyll</generator><link href="https://maaikevs.github.io/feed.xml" rel="self" type="application/atom+xml"/><link href="https://maaikevs.github.io/" rel="alternate" type="text/html" hreflang="en"/><updated>2025-02-08T13:03:46+00:00</updated><id>https://maaikevs.github.io/feed.xml</id><title type="html">blank</title><entry><title type="html">Agent-Based Models</title><link href="https://maaikevs.github.io/blog/2025/abm/" rel="alternate" type="text/html" title="Agent-Based Models"/><published>2025-02-08T00:32:13+00:00</published><updated>2025-02-08T00:32:13+00:00</updated><id>https://maaikevs.github.io/blog/2025/abm</id><content type="html" xml:base="https://maaikevs.github.io/blog/2025/abm/"><![CDATA[<h2 id="what-are-agent-based-models-abms">What are Agent-Based Models (ABMs)?</h2> <p>Agent-based models (ABMs) are computational simulation models that represent complex systems through the interactions of individual entities, called “agents.” These agents follow defined rules and behaviors, interacting with each other and their environment over time. ABMs are particularly useful for modeling systems with heterogeneous elements, emergent behaviors, and stochastic dynamics.</p> <h3 id="key-features-of-abms">Key Features of ABMs:</h3> <ul> <li><strong>Agents:</strong> Represent individual entities with attributes (e.g., cancer cells, immune cells, patients).</li> <li><strong>Rules:</strong> Govern agent behaviors (e.g., proliferation, migration, apoptosis).</li> <li><strong>Environment:</strong> The space where agents interact (e.g., tumor microenvironment).</li> <li><strong>Interactions:</strong> Agents interact based on defined mechanisms (e.g., cell signaling, competition for resources).</li> <li><strong>Stochasticity:</strong> Random events influence system evolution (e.g., mutations, drug resistance).</li> </ul> <h3 id="steps-to-implement">Steps to Implement:</h3> <ol> <li><strong>Define Agents and States:</strong> Map out the model structure.</li> <li><strong>Specify Transition Rules:</strong> Define the likelihood of transitioning into another state.</li> <li><strong>Set Up the Environment:</strong> Define spatial structure or non-spatial interactions.</li> <li><strong>Incorporate Stochasticity:</strong> Introduce random factors.</li> <li><strong>Simulation Execution:</strong> Run simulations over time to observe emergent patterns. . <strong>Analysis and Visualization:</strong> Use statistical tools and visualization libraries (e.g., Matplotlib, Gephi).</li> </ol> <h3 id="simple-example-scenario">Simple example scenario</h3> <p><strong>Scenario:</strong></p> <ul> <li>Simulating the growth of a heterogeneous tumor in response to chemotherapy.</li> </ul> <p><strong>Agents:</strong></p> <ul> <li>Tumor cells (can be in different states: “sensitive,” “resistant,” or “dead”)</li> </ul> <p>Not included in simple model:</p> <ul> <li>Immune cells (attack tumor cells)</li> <li>Drug molecules (affect tumor cells)</li> </ul> <p><strong>States and Transitions:</strong></p> <ul> <li>Sensitive cells → Become resistant due to mutations (probabilistic transition).</li> <li>Resistant cells → Survive treatment but might be targeted by immune cells.</li> <li>Dead cells → Removed from the environment.</li> </ul> <pre><code class="language-mermaid">stateDiagram-v2
 direction LR
-   sensitive cells --&gt; resistent cells: 0.1
-   resistent cells --&gt; dead cells: 0.3
-   sensitive cells --&gt; dead cells: 0.6
-   sensitive cells --&gt; sensitive cells: 0.3
-   resistent cells --&gt; resistent cells: 0.7
-   dead cells --&gt; dead cells: 1
-</code></pre> <p><strong>Environment:</strong></p> <ul> <li>A 2D lattice representing the tumor microenvironment where cells move and interact.</li> </ul> <p><strong>Simulation Objectives:</strong></p> <ul> <li>Observe how tumors evolve resistance over time.</li> <li>Evaluate the effectiveness of combination therapies.</li> <li>Predict the likelihood of recurrence after treatment cessation.</li> </ul> <p><strong>Key Insights Gained:</strong></p> <ul> <li>The role of spatial heterogeneity in treatment success.</li> <li>Potential timing for combination therapies to prevent resistance.</li> <li>How immune system dynamics influence tumor eradication.</li> </ul> <h3 id="implementation">Implementation</h3> <ul id="abm" class="tab" data-tab="9e0acec3-8993-43d2-b204-26539ce87b5d" data-name="abm"> <li class="active" id="abm-r"> <a href="#">R </a> </li> <li id="abm-python"> <a href="#">python </a> </li> </ul> <ul class="tab-content" id="9e0acec3-8993-43d2-b204-26539ce87b5d" data-name="abm"> <li class="active"> <div class="language-R highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">library</span><span class="p">(</span><span class="n">data.table</span><span class="p">)</span><span class="w">
+   sensitive cells --&gt; resistent cells
+   resistent cells --&gt; dead cells
+   sensitive cells --&gt; dead cells
+   sensitive cells --&gt; sensitive cells
+   resistent cells --&gt; resistent cells
+   dead cells --&gt; dead cells
+</code></pre> <p><strong>Environment:</strong></p> <ul> <li>A 2D lattice representing the tumor microenvironment where cells move and interact.</li> </ul> <p><strong>Simulation Objectives:</strong></p> <ul> <li>Observe how tumors evolve resistance over time.</li> <li>Evaluate the effectiveness of combination therapies.</li> <li>Predict the likelihood of recurrence after treatment cessation.</li> </ul> <p><strong>Key Insights Gained:</strong></p> <ul> <li>The role of spatial heterogeneity in treatment success.</li> <li>Potential timing for combination therapies to prevent resistance.</li> <li>How immune system dynamics influence tumor eradication.</li> </ul> <h3 id="implementation">Implementation</h3> <ul id="abm" class="tab" data-tab="a93d89eb-bdbc-487d-82d4-8740e670542c" data-name="abm"> <li class="active" id="abm-r"> <a href="#">R </a> </li> <li id="abm-python"> <a href="#">python </a> </li> </ul> <ul class="tab-content" id="a93d89eb-bdbc-487d-82d4-8740e670542c" data-name="abm"> <li class="active"> <div class="language-R highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">library</span><span class="p">(</span><span class="n">data.table</span><span class="p">)</span><span class="w">
 
 </span><span class="c1"># Develop the agent and the states</span><span class="w">
 </span><span class="n">initialize_model</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="k">function</span><span class="p">(</span><span class="n">initial_cells</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">100</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w">
@@ -116,17 +116,17 @@ direction LR
         "label": "Sensitive cells",
         "fill": false,
         "lineTension": 0.1,
-        "backgroundColor": "rgba(54, 162, 235,0.4)",
-        "borderColor": "rgba(54, 162, 235,1)",
+        "backgroundColor": "rgba(75,192,192,0.4)",
+        "borderColor": "rgba(75,192,192,1)",
         "borderCapStyle": "butt",
         "borderDash": [],
         "borderDashOffset": 0,
         "borderJoinStyle": "miter",
-        "pointBorderColor": "rgba(54, 162, 235,1)",
+        "pointBorderColor": "rgba(75,192,192,1)",
         "pointBackgroundColor": "#fff",
         "pointBorderWidth": 1,
         "pointHoverRadius": 5,
-        "pointHoverBackgroundColor": "rgba(54, 162, 235,1)",
+        "pointHoverBackgroundColor": "rgba(75,192,192,1)",
         "pointHoverBorderColor": "rgba(220,220,220,1)",
         "pointHoverBorderWidth": 2,
         "pointRadius": 1,
@@ -145,17 +145,17 @@ direction LR
         "label": "Resistant cells",
         "fill": false,
         "lineTension": 0.1,
-        "backgroundColor": "rgba(255, 205, 86,0.4)",
-        "borderColor": "rgba(255, 205, 86,1)",
+        "backgroundColor": "rgba(75,192,192,0.4)",
+        "borderColor": "rgba(75,192,192,1)",
         "borderCapStyle": "butt",
         "borderDash": [],
         "borderDashOffset": 0,
         "borderJoinStyle": "miter",
-        "pointBorderColor": "rgba(255, 205, 86,1)",
+        "pointBorderColor": "rgba(75,192,192,1)",
         "pointBackgroundColor": "#fff",
         "pointBorderWidth": 1,
         "pointHoverRadius": 5,
-        "pointHoverBackgroundColor": "rgba(255, 205, 86,1)",
+        "pointHoverBackgroundColor": "rgba(75,192,192,1)",
         "pointHoverBorderColor": "rgba(220,220,220,1)",
         "pointHoverBorderWidth": 2,
         "pointRadius": 1,
@@ -170,17 +170,17 @@ direction LR
         "label": "Dead cells",
         "fill": false,
         "lineTension": 0.1,
-        "backgroundColor": "rgba(255, 99, 132,0.4)",
-        "borderColor": "rgba(255, 99, 132,1)",
+        "backgroundColor": "rgba(75,192,192,0.4)",
+        "borderColor": "rgba(75,192,192,1)",
         "borderCapStyle": "butt",
         "borderDash": [],
         "borderDashOffset": 0,
         "borderJoinStyle": "miter",
-        "pointBorderColor": "rgba(255, 99, 132,1)",
+        "pointBorderColor": "rgba(75,192,192,1)",
         "pointBackgroundColor": "#fff",
         "pointBorderWidth": 1,
         "pointHoverRadius": 5,
-        "pointHoverBackgroundColor": "rgba(255, 99, 132,1)",
+        "pointHoverBackgroundColor": "rgba(75,192,192,1)",
         "pointHoverBorderColor": "rgba(220,220,220,1)",
         "pointHoverBorderWidth": 2,
         "pointRadius": 1,
@@ -448,7 +448,195 @@ direction LR
     }
   ]
 }
-</code></pre> <p>Note that this library offer support for both light and dark themes. You can switch between them using the theme switcher in the top right corner of the page.</p>]]></content><author><name></name></author><category term="sample-posts"/><category term="formatting"/><category term="charts"/><summary type="html"><![CDATA[this is what included echarts code could look like]]></summary></entry><entry><title type="html">a post with bibliography</title><link href="https://maaikevs.github.io/blog/2023/post-bibliography/" rel="alternate" type="text/html" title="a post with bibliography"/><published>2023-07-12T13:56:00+00:00</published><updated>2023-07-12T13:56:00+00:00</updated><id>https://maaikevs.github.io/blog/2023/post-bibliography</id><content type="html" xml:base="https://maaikevs.github.io/blog/2023/post-bibliography/"><![CDATA[<p>This post shows how to add bibliography to simple blog posts. We support every citation style that <a href="https://github.com/inukshuk/jekyll-scholar">jekyll-scholar</a> does. That means simple citation like (missing reference), multiple citations like (missing reference), long references like (missing reference) or also quotes:</p> <blockquote><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,<br/>sed do eiusmod tempor.</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p><cite>(missing reference)</cite></blockquote> <p>If you would like something more academic, check the <a href="/blog/2021/distill/">distill style post</a>.</p>]]></content><author><name></name></author><category term="sample-posts"/><category term="formatting"/><category term="bib"/><summary type="html"><![CDATA[an example of a blog post with bibliography]]></summary></entry><entry><title type="html">a post with jupyter notebook</title><link href="https://maaikevs.github.io/blog/2023/jupyter-notebook/" rel="alternate" type="text/html" title="a post with jupyter notebook"/><published>2023-07-04T12:57:00+00:00</published><updated>2023-07-04T12:57:00+00:00</updated><id>https://maaikevs.github.io/blog/2023/jupyter-notebook</id><content type="html" xml:base="https://maaikevs.github.io/blog/2023/jupyter-notebook/"><![CDATA[<p>To include a jupyter notebook in a post, you can use the following code:</p> <div class="language-liquid highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{::nomarkdown}
+</code></pre> <p>Note that this library offer support for both light and dark themes. You can switch between them using the theme switcher in the top right corner of the page.</p>]]></content><author><name></name></author><category term="sample-posts"/><category term="formatting"/><category term="charts"/><summary type="html"><![CDATA[this is what included echarts code could look like]]></summary></entry><entry><title type="html">a post with chart.js</title><link href="https://maaikevs.github.io/blog/2024/chartjs/" rel="alternate" type="text/html" title="a post with chart.js"/><published>2024-01-26T01:04:00+00:00</published><updated>2024-01-26T01:04:00+00:00</updated><id>https://maaikevs.github.io/blog/2024/chartjs</id><content type="html" xml:base="https://maaikevs.github.io/blog/2024/chartjs/"><![CDATA[<p>This is an example post with some <a href="https://www.chartjs.org/">chart.js</a> code.</p> <div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">```</span><span class="nl">chartjs
+</span><span class="sb">{
+  "type": "line",
+  "data": {
+    "labels": [
+      "January",
+      "February",
+      "March",
+      "April",
+      "May",
+      "June",
+      "July"
+    ],
+    "datasets": [
+      {
+        "label": "# of bugs",
+        "fill": false,
+        "lineTension": 0.1,
+        "backgroundColor": "rgba(75,192,192,0.4)",
+        "borderColor": "rgba(75,192,192,1)",
+        "borderCapStyle": "butt",
+        "borderDash": [],
+        "borderDashOffset": 0,
+        "borderJoinStyle": "miter",
+        "pointBorderColor": "rgba(75,192,192,1)",
+        "pointBackgroundColor": "#fff",
+        "pointBorderWidth": 1,
+        "pointHoverRadius": 5,
+        "pointHoverBackgroundColor": "rgba(75,192,192,1)",
+        "pointHoverBorderColor": "rgba(220,220,220,1)",
+        "pointHoverBorderWidth": 2,
+        "pointRadius": 1,
+        "pointHitRadius": 10,
+        "data": [
+          65,
+          59,
+          80,
+          81,
+          56,
+          55,
+          40
+        ],
+        "spanGaps": false
+      }
+    ]
+  },
+  "options": {}
+}</span>
+<span class="p">```</span>
+</code></pre></div></div> <p>This is how it looks like:</p> <pre><code class="language-chartjs">{
+  "type": "line",
+  "data": {
+    "labels": [
+      "January",
+      "February",
+      "March",
+      "April",
+      "May",
+      "June",
+      "July"
+    ],
+    "datasets": [
+      {
+        "label": "# of bugs",
+        "fill": false,
+        "lineTension": 0.1,
+        "backgroundColor": "rgba(75,192,192,0.4)",
+        "borderColor": "rgba(75,192,192,1)",
+        "borderCapStyle": "butt",
+        "borderDash": [],
+        "borderDashOffset": 0,
+        "borderJoinStyle": "miter",
+        "pointBorderColor": "rgba(75,192,192,1)",
+        "pointBackgroundColor": "#fff",
+        "pointBorderWidth": 1,
+        "pointHoverRadius": 5,
+        "pointHoverBackgroundColor": "rgba(75,192,192,1)",
+        "pointHoverBorderColor": "rgba(220,220,220,1)",
+        "pointHoverBorderWidth": 2,
+        "pointRadius": 1,
+        "pointHitRadius": 10,
+        "data": [
+          65,
+          59,
+          80,
+          81,
+          56,
+          55,
+          40
+        ],
+        "spanGaps": false
+      },
+      {
+        "label": "# of bugs",
+        "fill": false,
+        "lineTension": 0.1,
+        "backgroundColor": "rgba(75,192,192,0.4)",
+        "borderColor": "rgba(75,192,192,1)",
+        "borderCapStyle": "butt",
+        "borderDash": [],
+        "borderDashOffset": 0,
+        "borderJoinStyle": "miter",
+        "pointBorderColor": "rgba(75,192,192,1)",
+        "pointBackgroundColor": "#fff",
+        "pointBorderWidth": 1,
+        "pointHoverRadius": 5,
+        "pointHoverBackgroundColor": "rgba(75,192,192,1)",
+        "pointHoverBorderColor": "rgba(220,220,220,1)",
+        "pointHoverBorderWidth": 2,
+        "pointRadius": 1,
+        "pointHitRadius": 10,
+        "data": [
+          165,
+          159,
+          180,
+          181,
+          156,
+          155,
+          140
+        ],
+        "spanGaps": false
+      }
+    ]
+  },
+  "options": {}
+}
+</code></pre> <p>Also another example chart.</p> <div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">```</span><span class="nl">chartjs
+</span><span class="sb">{
+  "type": "doughnut",
+  "data": {
+    "labels": [
+      "Red",
+      "Blue",
+      "Yellow"
+    ],
+    "datasets": [
+      {
+        "data": [
+          300,
+          50,
+          100
+        ],
+        "backgroundColor": [
+          "#FF6384",
+          "#36A2EB",
+          "#FFCE56"
+        ],
+        "hoverBackgroundColor": [
+          "#FF6384",
+          "#36A2EB",
+          "#FFCE56"
+        ]
+      }
+    ]
+  },
+  "options": {}
+}</span>
+<span class="p">```</span>
+</code></pre></div></div> <p>Which generates:</p> <pre><code class="language-chartjs">{
+  "type": "doughnut",
+  "data": {
+    "labels": [
+      "Red",
+      "Blue",
+      "Yellow"
+    ],
+    "datasets": [
+      {
+        "data": [
+          300,
+          50,
+          100
+        ],
+        "backgroundColor": [
+          "#FF6384",
+          "#36A2EB",
+          "#FFCE56"
+        ],
+        "hoverBackgroundColor": [
+          "#FF6384",
+          "#36A2EB",
+          "#FFCE56"
+        ]
+      }
+    ]
+  },
+  "options": {}
+}
+</code></pre>]]></content><author><name></name></author><category term="sample-posts"/><category term="formatting"/><category term="charts"/><summary type="html"><![CDATA[this is what included chart.js code could look like]]></summary></entry><entry><title type="html">a post with bibliography</title><link href="https://maaikevs.github.io/blog/2023/post-bibliography/" rel="alternate" type="text/html" title="a post with bibliography"/><published>2023-07-12T13:56:00+00:00</published><updated>2023-07-12T13:56:00+00:00</updated><id>https://maaikevs.github.io/blog/2023/post-bibliography</id><content type="html" xml:base="https://maaikevs.github.io/blog/2023/post-bibliography/"><![CDATA[<p>This post shows how to add bibliography to simple blog posts. We support every citation style that <a href="https://github.com/inukshuk/jekyll-scholar">jekyll-scholar</a> does. That means simple citation like (missing reference), multiple citations like (missing reference), long references like (missing reference) or also quotes:</p> <blockquote><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,<br/>sed do eiusmod tempor.</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p><cite>(missing reference)</cite></blockquote> <p>If you would like something more academic, check the <a href="/blog/2021/distill/">distill style post</a>.</p>]]></content><author><name></name></author><category term="sample-posts"/><category term="formatting"/><category term="bib"/><summary type="html"><![CDATA[an example of a blog post with bibliography]]></summary></entry><entry><title type="html">a post with jupyter notebook</title><link href="https://maaikevs.github.io/blog/2023/jupyter-notebook/" rel="alternate" type="text/html" title="a post with jupyter notebook"/><published>2023-07-04T12:57:00+00:00</published><updated>2023-07-04T12:57:00+00:00</updated><id>https://maaikevs.github.io/blog/2023/jupyter-notebook</id><content type="html" xml:base="https://maaikevs.github.io/blog/2023/jupyter-notebook/"><![CDATA[<p>To include a jupyter notebook in a post, you can use the following code:</p> <div class="language-liquid highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{::nomarkdown}
 <span class="cp">{%</span><span class="w"> </span><span class="nt">assign</span><span class="w"> </span><span class="nv">jupyter_path</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">'assets/jupyter/blog.ipynb'</span><span class="w"> </span><span class="p">|</span><span class="w"> </span><span class="nf">relative_url</span><span class="w"> </span><span class="cp">%}</span>
 <span class="cp">{%</span><span class="w"> </span><span class="nt">capture</span><span class="w"> </span><span class="nv">notebook_exists</span><span class="w"> </span><span class="cp">%}{%</span><span class="w"> </span><span class="nt">file_exists</span><span class="w"> </span>assets/jupyter/blog.ipynb<span class="w"> </span><span class="cp">%}{%</span><span class="w"> </span><span class="nt">endcapture</span><span class="w"> </span><span class="cp">%}</span>
 <span class="cp">{%</span><span class="w"> </span><span class="nt">if</span><span class="w"> </span><span class="nv">notebook_exists</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="s1">'true'</span><span class="w"> </span><span class="cp">%}</span>
@@ -457,4 +645,4 @@ direction LR
   &lt;p&gt;Sorry, the notebook you are looking for does not exist.&lt;/p&gt;
 <span class="cp">{%</span><span class="w"> </span><span class="nt">endif</span><span class="w"> </span><span class="cp">%}</span>
 {:/nomarkdown}
-</code></pre></div></div> <p>Let’s break it down: this is possible thanks to <a href="https://github.com/red-data-tools/jekyll-jupyter-notebook">Jekyll Jupyter Notebook plugin</a> that allows you to embed jupyter notebooks in your posts. It basically calls <a href="https://nbconvert.readthedocs.io/en/latest/usage.html#convert-html"><code class="language-plaintext highlighter-rouge">jupyter nbconvert --to html</code></a> to convert the notebook to an html page and then includes it in the post. Since <a href="https://jekyllrb.com/docs/configuration/markdown/">Kramdown</a> is the default Markdown renderer for Jekyll, we need to surround the call to the plugin with the <a href="https://kramdown.gettalong.org/syntax.html#extensions">::nomarkdown</a> tag so that it stops processing this part with Kramdown and outputs the content as-is.</p> <p>The plugin takes as input the path to the notebook, but it assumes the file exists. If you want to check if the file exists before calling the plugin, you can use the <code class="language-plaintext highlighter-rouge">file_exists</code> filter. This avoids getting a 404 error from the plugin and ending up displaying the main page inside of it instead. If the file does not exist, you can output a message to the user. The code displayed above outputs the following:</p> <div class="jupyter-notebook" style="position: relative; width: 100%; margin: 0 auto;"> <div class="jupyter-notebook-iframe-container"> <iframe src="/assets/jupyter/blog.ipynb.html" style="position: absolute; top: 0; left: 0; border-style: none;" width="100%" height="100%" onload="this.parentElement.style.paddingBottom = (this.contentWindow.document.documentElement.scrollHeight + 10) + 'px'"></iframe> </div> </div> <p>Note that the jupyter notebook supports both light and dark themes.</p>]]></content><author><name></name></author><category term="sample-posts"/><category term="formatting"/><category term="jupyter"/><summary type="html"><![CDATA[an example of a blog post with jupyter notebook]]></summary></entry><entry><title type="html">EURACAN’s Participation at OHDSI Europe Symposium - Advancing Collaborative Cancer Research</title><link href="https://maaikevs.github.io/blog/2023/OHDSI-talk/" rel="alternate" type="text/html" title="EURACAN’s Participation at OHDSI Europe Symposium - Advancing Collaborative Cancer Research"/><published>2023-07-03T10:01:00+00:00</published><updated>2023-07-03T10:01:00+00:00</updated><id>https://maaikevs.github.io/blog/2023/OHDSI-talk</id><content type="html" xml:base="https://maaikevs.github.io/blog/2023/OHDSI-talk/"><![CDATA[<p>The recent OHDSI Europe Symposium “Full Steam Ahead” brought together experts from various corners of the healthcare landscape, with EURACAN taking a notable role in the event. Let’s delve into the key highlights of EURACAN’s engagement in this informative gathering. OHDSI is the Observational Health Data Sciences and Informatics community, an increasingly large group of clinicians, epidemiologists and data scientists working with observational health data from various sources (e.g. claims data, patient record data, registries). The idea is simple: if every data source is coded in the same way, we can conduct the same analyses everywhere and we can carry out studies at-scale.</p> <h2 id="day-1-fostering-collaboration">Day 1: Fostering Collaboration</h2> <p>On the first day of the symposium, the <a href="https://prostate-pioneer.eu">PIONEER</a>, <a href="https://euracan.eu">EURACAN</a>, and <a href="https://digicore-cancer.eu">DIGICORE Cancer</a> Observational Medical Outcomes Partnership (OMOP) networks came together to jointly organized a Cancer Network Master Class. Each of these networks specializes in distinct aspects of cancer research: PIONEER focuses on prostate cancer, EURACAN on rare solid cancers, and DIGICORE on comprehensive cancer care quality. Despite their independent operations, the event underscored the value of sharing experiences for mutual benefit.</p> <p>During the discussions, participants addressed common challenges faced by the networks. These challenges encompassed data transformation into the OMOP Common Data Model (CDM) format, analysis within the OMOP framework, and establishing a strong network of data partners using the OMOP-CDM. The oncology workshop led by Asieh Golozar and Christian Reich further explored these challenges and highlighted the significance of incorporating detailed cancer information into the Common Data Model. Dr Maaike van Swieten (Netherlands Comprehensive Cancer Organisation; IKNL) represented EURACAN in the discussions. Van Swieten stressed the importance of the OHDSI community for the EURACAN Registry: “By collaborating on data definitions, and analyses, we can tackle these challenges together. It makes our work more effective, more impactful, and more fun”.</p> <div class="row mt-3"> <div class="col-sm mt-3 mt-md-0"> <figure> <picture> <source class="responsive-img-srcset" srcset=" /assets/img/OHDSI-day1-480.webp 480w, /assets/img/OHDSI-day1-800.webp 800w, /assets/img/OHDSI-day1-1400.webp 1400w, " sizes="95vw" type="image/webp"/> <img src="/assets/img/OHDSI-day1.jpg" class="img-fluid rounded z-depth-1" width="100%" height="auto" onerror="this.onerror=null; $('.responsive-img-srcset').remove();"/> </picture> </figure> </div> </div> <h2 id="day-2-broadening-horizons">Day 2: Broadening Horizons</h2> <p>The second day of the symposium saw a broader exploration of the OMOP-CDM’s implications. EURACAN was prominently featured in the session titled “European Initiatives Using the OMOP-CDM.” Here, initiatives like HONEUR, PIONEER, and OPTIMA came together to discuss their progress in solid cancer, blood cancer, and rare cancers research.</p> <div class="row mt-3"> <div class="col-sm mt-3 mt-md-0"> <figure> <picture> <source class="responsive-img-srcset" srcset=" /assets/img/OHDSI-mvanswieten-480.webp 480w, /assets/img/OHDSI-mvanswieten-800.webp 800w, /assets/img/OHDSI-mvanswieten-1400.webp 1400w, " sizes="95vw" type="image/webp"/> <img src="/assets/img/OHDSI-mvanswieten.jpg" class="img-fluid rounded z-depth-1" width="100%" height="auto" onerror="this.onerror=null; $('.responsive-img-srcset').remove();"/> </picture> </figure> </div> </div> <p>Central to the discussion was the process of integrating cancer patient information into the OMOP-CDM framework. Speakers shared their insights into challenges faced and lessons learned, highlighting the potential of integrated analysis and federated learning in transforming cancer care.</p> <p>In a symposium that fostered enlightening discussions, the participation of EURACAN reflected its commitment to advancing rare cancer research and care. As the event came to a close, it became clear that the successful discussions sparked by these sessions have laid the foundation for ongoing collaboration and knowledge sharing. This, in turn, will pave the way for further progress, opening new doors for innovation and advancement in cancer research.</p> <div class="row mt-3"> <div class="col-sm mt-3 mt-md-0"> <figure> <picture> <source class="responsive-img-srcset" srcset=" /assets/img/OHDSI-day2-panel-480.webp 480w, /assets/img/OHDSI-day2-panel-800.webp 800w, /assets/img/OHDSI-day2-panel-1400.webp 1400w, " sizes="95vw" type="image/webp"/> <img src="/assets/img/OHDSI-day2-panel.jpg" class="img-fluid rounded z-depth-1" width="100%" height="auto" onerror="this.onerror=null; $('.responsive-img-srcset').remove();"/> </picture> </figure> </div> </div> <p> </p>]]></content><author><name></name></author><category term="talks"/><category term="Talks"/><category term="Conferences"/><summary type="html"><![CDATA[Invited Talk and Panel Discussion at OHDSI Europe 2023]]></summary></entry></feed>
+</code></pre></div></div> <p>Let’s break it down: this is possible thanks to <a href="https://github.com/red-data-tools/jekyll-jupyter-notebook">Jekyll Jupyter Notebook plugin</a> that allows you to embed jupyter notebooks in your posts. It basically calls <a href="https://nbconvert.readthedocs.io/en/latest/usage.html#convert-html"><code class="language-plaintext highlighter-rouge">jupyter nbconvert --to html</code></a> to convert the notebook to an html page and then includes it in the post. Since <a href="https://jekyllrb.com/docs/configuration/markdown/">Kramdown</a> is the default Markdown renderer for Jekyll, we need to surround the call to the plugin with the <a href="https://kramdown.gettalong.org/syntax.html#extensions">::nomarkdown</a> tag so that it stops processing this part with Kramdown and outputs the content as-is.</p> <p>The plugin takes as input the path to the notebook, but it assumes the file exists. If you want to check if the file exists before calling the plugin, you can use the <code class="language-plaintext highlighter-rouge">file_exists</code> filter. This avoids getting a 404 error from the plugin and ending up displaying the main page inside of it instead. If the file does not exist, you can output a message to the user. The code displayed above outputs the following:</p> <div class="jupyter-notebook" style="position: relative; width: 100%; margin: 0 auto;"> <div class="jupyter-notebook-iframe-container"> <iframe src="/assets/jupyter/blog.ipynb.html" style="position: absolute; top: 0; left: 0; border-style: none;" width="100%" height="100%" onload="this.parentElement.style.paddingBottom = (this.contentWindow.document.documentElement.scrollHeight + 10) + 'px'"></iframe> </div> </div> <p>Note that the jupyter notebook supports both light and dark themes.</p>]]></content><author><name></name></author><category term="sample-posts"/><category term="formatting"/><category term="jupyter"/><summary type="html"><![CDATA[an example of a blog post with jupyter notebook]]></summary></entry></feed>
