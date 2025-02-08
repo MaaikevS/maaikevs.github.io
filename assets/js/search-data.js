@@ -48,6 +48,17 @@ ninja.data = [{
           window.location.href = "/blog/2024/photo-gallery/";
         
       },
+    },{id: "post-agent-based-models",
+      
+        title: "Agent-Based Models",
+      
+      description: "What are ABMs and how to implement them",
+      section: "Posts",
+      handler: () => {
+        
+          window.location.href = "/blog/2024/abm/";
+        
+      },
     },{id: "post-a-post-with-tabs",
       
         title: "a post with tabs",
